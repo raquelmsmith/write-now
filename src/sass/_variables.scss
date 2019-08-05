@@ -1,0 +1,13 @@
+// colors
+$white: #fff;
+$black: #000;
+$pink: #ff2c85;
+$purple: #a74cc9;
+$blue: #2879d8;
+
+// gradients
+$fun-multi: linear-gradient(135deg, $pink 0%, $purple 51%, $blue 100%);
+
+// backgrounds
+$magenta-dot: url('src/assets/images/background-dot.svg');
+$multi-dot: $magenta-dot, $fun-multi;

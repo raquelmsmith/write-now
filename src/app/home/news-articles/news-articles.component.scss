@@ -1,0 +1,40 @@
+img {
+  filter: grayscale(100%);
+}
+figure {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(167, 76, 201, 0.6);
+    transition: all 0.5s ease 0s;
+  }
+}
+
+a {
+  &:nth-child(even) {
+    figure:after {
+      background: rgba(40, 121, 216, 0.6);
+    }
+    &:hover figure:after {
+      background: rgba(40, 121, 216, 0.8);
+    }
+  }
+  &:hover figure:after {
+    background: rgba(167, 76, 201, 0.8);
+  }
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+}

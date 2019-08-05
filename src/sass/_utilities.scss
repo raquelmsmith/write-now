@@ -1,0 +1,19 @@
+.bg-multi-dot {
+  background: $multi-dot;
+  background-repeat: 20px/20px repeat;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+}
+
+.chunky-shadow {
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}

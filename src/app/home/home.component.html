@@ -1,0 +1,116 @@
+<app-top-banner></app-top-banner>
+<section class="py-2 mx-auto max-w-6xl flex justify-between overflow-auto">
+  <div class="flex align-center" *ngFor="let logo of logos">
+    <img
+      src="{{ logo.url }}"
+      alt="{{ logo.name }} Logo"
+      srcset=""
+      class="w-1/2 m-auto"
+    />
+  </div>
+</section>
+<app-divider></app-divider>
+<section>
+  <app-container-medium>
+    <h2 class="mb-4 text-xl tracking-wider font-display-solid">
+      We are copywriting experts.
+    </h2>
+    <p>
+      Whether you need help optimizing landing pages, crafting engaging email
+      marketing campaigns, or creating content for organic search, we've got you
+      covered.
+    </p>
+    <app-button-primary [text]="'Learn More'"></app-button-primary>
+  </app-container-medium>
+</section>
+<section class="bg-multi-dot">
+  <app-container-medium>
+    <h2 class="text-6xl leading-none chunky-shadow text-stroke">
+      The Good Stuff
+    </h2>
+    <p class="max-w-xs mx-auto my-4">
+      Get our best articles, videos, and - best of all - our Copywriting 101
+      ebook delivered right to your inbox. No spam, just the good stuff.
+    </p>
+    <form>
+      <app-form-field-text
+        [type]="'text'"
+        [placeholder]="'First Name'"
+      ></app-form-field-text>
+      <app-form-field-text
+        [type]="'email'"
+        [placeholder]="'Email Address'"
+      ></app-form-field-text>
+      <app-button-primary [text]="'Sign Up'"></app-button-primary>
+    </form>
+  </app-container-medium>
+</section>
+<section>
+  <app-container-medium>
+    <h2 class="text-stroke">Testimonials</h2>
+    <p class="my-4">
+      Our customers love us - and our results. But don't take our word for it,
+      let them tell you themselves!
+    </p>
+    <div class="testimonial-preview">
+      <figure>
+        <img
+          src="../../assets/images/testimonial-image.png"
+          alt="Christine Thomas from Thomas Design"
+        />
+      </figure>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="100"
+        height="104"
+        viewBox="0 0 100 104"
+      >
+        <defs>
+          <filter
+            id="a"
+            x="0"
+            y="0"
+            width="100"
+            height="104"
+            filterUnits="userSpaceOnUse"
+          >
+            <feOffset dy="3" input="SourceAlpha" />
+            <feGaussianBlur stdDeviation="10" result="b" />
+            <feFlood flood-opacity="0.502" />
+            <feComposite operator="in" in2="b" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+        </defs>
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#a)">
+          <g
+            transform="translate(70 27) rotate(90)"
+            fill="#fff"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M 40.61745834350586 38 L 3.38254189491272 38 L 22 4.150076389312744 L 40.61745834350586 38 Z"
+              stroke="none"
+            />
+            <path
+              d="M 22 8.300142288208008 L 6.765079498291016 36 L 37.23492050170898 36 L 22 8.300142288208008 M 22 0 L 44 40 L 0 40 L 22 0 Z"
+              stroke="none"
+              fill="#fff"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <app-button-secondary [text]="'Watch'"></app-button-secondary>
+  </app-container-medium>
+</section>
+<app-divider></app-divider>
+<section>
+  <app-container-large>
+    <h2 class="text-stroke">News</h2>
+    <app-news-articles></app-news-articles>
+  </app-container-large>
+</section>
+<footer class="opacity-60 mb-4">
+  <app-logo></app-logo>
+</footer>

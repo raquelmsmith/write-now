@@ -1,0 +1,39 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import './variables';
+@import './mixins';
+@import './utilities';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+@font-face {
+  font-family: 'Phosphate Inline';
+  src: url('../assets/fonts/phosphate-inline.ttf');
+}
+@font-face {
+  font-family: 'Phosphate Solid';
+  src: url('../assets/fonts/phosphate-solid.ttf');
+}
+
+body {
+  @apply text-white bg-black font-body;
+}
+
+h1,
+h2,
+h3 {
+  @apply text-white font-display tracking-wider;
+}
+h1 {
+  @apply text-5xl chunky-shadow text-stroke;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply font-display-solid tracking-wider;
+}

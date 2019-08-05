@@ -1,0 +1,11 @@
+object {
+  width: 100px;
+  pointer-events: none;
+}
+a {
+  display: block;
+  transition: all 0.2s ease 0s;
+  &:hover {
+    transform: scale(1.1) rotate(-3deg);
+  }
+}

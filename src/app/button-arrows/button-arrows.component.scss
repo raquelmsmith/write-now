@@ -1,0 +1,34 @@
+span {
+  display: inline-block;
+  margin-left: 0.5rem;
+  svg {
+    display: inline;
+    margin-right: -2px;
+    margin-top: -4px;
+    path {
+      &#second {
+        transition: all 0.5s ease 0.2s;
+      }
+      &#third {
+        transition: all 0.5s ease 0s;
+      }
+    }
+  }
+}
+
+:host-context(app-button-primary:hover) span svg path,
+:host-context(app-button-primary:hover) span svg path,
+:host-context(app-news-articles:hover) span svg path {
+  stroke: #fff;
+  &#second {
+    transition: all 0.5s ease 0s;
+  }
+  &#third {
+    transition: all 0.5s ease 0.2s;
+  }
+}
+
+:host-context(app-button-secondary) span svg {
+  width: 45%;
+  margin-top: -2px;
+}

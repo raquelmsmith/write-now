@@ -1,0 +1,21 @@
+h1 {
+  line-height: 45px;
+  transform: rotate(-10deg);
+  text-shadow: 4px 4px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  padding-bottom: 15px;
+  span {
+    transition: all 0.2s ease 0s;
+    display: inline-block;
+    font-size: 80px;
+    &:hover {
+      transform: scale(1.2) rotate(-3deg);
+    }
+    &.alt {
+      font-size: 40px;
+      &:hover {
+        transform: scale(1.2) rotate(3deg);
+      }
+    }
+  }
+}

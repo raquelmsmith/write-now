@@ -1,0 +1,21 @@
+button {
+  transition: all 0.2s ease 0s;
+  white-space: nowrap;
+  &:hover {
+  }
+}
+
+div {
+  clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0% 100%);
+  position: absolute;
+  min-width: 250px;
+  min-height: 2rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.bg-blue {
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+}
