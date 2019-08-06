@@ -8,6 +8,8 @@
 @import './mixins';
 @import './utilities';
 
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 @font-face {
@@ -32,7 +34,7 @@ h1 {
   @apply text-5xl chunky-shadow text-stroke;
 }
 h2 {
-  @apply text-4xl;
+  @apply text-4xl text-stroke;
 }
 h3 {
   @apply font-display-solid tracking-wider;

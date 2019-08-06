@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { VgCoreModule } from 'videogular2/compiled/core';
+import { VgControlsModule } from 'videogular2/compiled/controls';
+import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
+import { VgBufferingModule } from 'videogular2/compiled/buffering';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -16,32 +21,45 @@ import { ButtonSecondaryComponent } from './button-secondary/button-secondary.co
 import { NewsArticlesComponent } from './home/news-articles/news-articles.component';
 import { ContainerLargeComponent } from './container-large/container-large.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { VideoPlayerComponent } from './testimonials/video-player/video-player.component';
+import { ContainerFullComponent } from './container-full/container-full.component';
+import { SpeechBubbleComponent } from './testimonials/speech-bubble/speech-bubble.component';
+import { CommentsComponent } from './testimonials/comments/comments.component';
+import { CommentFormComponent } from './testimonials/comment-form/comment-form.component';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      NavigationComponent,
-      LogoComponent,
-      TopBannerComponent,
-      ButtonPrimaryComponent,
-      ButtonArrowsComponent,
-      HomeComponent,
-      DividerComponent,
-      ContainerMediumComponent,
-      FormFieldTextComponent,
-      ButtonSecondaryComponent,
-      NewsArticlesComponent,
-      ContainerLargeComponent,
-      LogoComponent,
-      TestimonialsComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    LogoComponent,
+    TopBannerComponent,
+    ButtonPrimaryComponent,
+    ButtonArrowsComponent,
+    HomeComponent,
+    DividerComponent,
+    ContainerMediumComponent,
+    FormFieldTextComponent,
+    ButtonSecondaryComponent,
+    NewsArticlesComponent,
+    ContainerLargeComponent,
+    LogoComponent,
+    TestimonialsComponent,
+    VideoPlayerComponent,
+    ContainerFullComponent,
+    SpeechBubbleComponent,
+    CommentsComponent,
+    CommentFormComponent
+  ],
+  imports: [
+    BrowserModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

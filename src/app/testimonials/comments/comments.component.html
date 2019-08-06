@@ -1,0 +1,18 @@
+<section>
+  <article *ngFor="let comment of comments; let i = index" class="flex">
+    <div class="mt-8">
+      <img
+        src="../../../assets/images/person-{{ i }}.jpg"
+        alt="{{ comment.author }}"
+        class="rounded-full grayscale"
+      />
+    </div>
+    <app-speech-bubble
+      [color]="'purple'"
+      [position]="'left'"
+      cite="{{ comment.author }}"
+    >
+      {{ comment.comment }}
+    </app-speech-bubble>
+  </article>
+</section>

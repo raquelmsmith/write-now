@@ -1,0 +1,58 @@
+@import '../../../sass/variables';
+blockquote {
+  position: relative;
+  padding: 15px;
+  border: 4px solid $pink;
+  &::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: $pink transparent;
+    border-width: 0 20px 20px;
+    display: block;
+    width: 0;
+    top: -20px;
+    bottom: auto;
+    right: auto;
+    left: 20px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: $black transparent;
+    border-width: 0 13px 13px;
+    display: block;
+    width: 0;
+    top: -13px;
+    bottom: auto;
+    right: auto;
+    left: 27px;
+  }
+  &.purple {
+    border-color: $purple;
+    &::before {
+      border-color: $purple transparent;
+    }
+    &.left::before {
+      border-color: transparent $purple;
+    }
+  }
+  &.left {
+    margin-left: 30px;
+    &::before {
+      top: 20px;
+      bottom: auto;
+      left: -21px;
+      border-width: 20px 20px 20px 0;
+      border-color: transparent $pink;
+    }
+    &::after {
+      top: 25px;
+      bottom: auto;
+      left: -15px;
+      border-width: 15px 15px 15px 0;
+      border-color: transparent $black;
+    }
+  }
+}

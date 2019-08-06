@@ -1,3 +1,15 @@
-<app-container-large [multiDot]="true"
-  ><h1>Testimonials</h1></app-container-large
->
+<app-container-full [multiDot]="true">
+  <h1>Testimonials</h1>
+</app-container-full>
+<app-container-medium>
+  <app-video-player></app-video-player>
+  <app-speech-bubble [cite]="'Christine Thomas, Thomas Design'">
+    <p>
+      I never imagined the difference that good copy could make. Write Now! has
+      turned my business around.
+    </p>
+  </app-speech-bubble>
+  <h2>Leave a Comment</h2>
+  <app-comments></app-comments>
+</app-container-medium>
+<app-divider></app-divider>

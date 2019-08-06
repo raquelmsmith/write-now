@@ -1,0 +1,10 @@
+<blockquote
+  class="text-left my-8 p-8"
+  [ngClass]="{ purple: color === 'purple', left: position === 'left' }"
+>
+  <ng-content></ng-content>
+  <cite
+    class="font-display-solid not-italic text-sm text-right block mt-2 tracking-wider"
+    >- {{ cite }}</cite
+  >
+</blockquote>

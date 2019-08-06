@@ -4480,14 +4480,19 @@ video {
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.grayscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 @font-face {
-  font-family: 'Phosphate Inline';
+  font-family: "Phosphate Inline";
 
   src: url("../assets/fonts/phosphate-inline.ttf");
 }
 
 @font-face {
-  font-family: 'Phosphate Solid';
+  font-family: "Phosphate Solid";
 
   src: url("../assets/fonts/phosphate-solid.ttf");
 }
@@ -4514,6 +4519,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  -webkit-text-stroke: 1px black;
 }
 
 h3 {
