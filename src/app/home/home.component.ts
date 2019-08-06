@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   logos: any[] = [
-    { name: 'Disney', url: '../../assets/images/disney-logo.png' },
-    { name: 'Dreamworks', url: '../../assets/images/dreamworks-logo.png' },
-    { name: 'Lionsgate', url: '../../assets/images/lionsgate-logo.png' }
+    { name: 'Disney', url: 'assets/images/disney-logo.png' },
+    { name: 'Dreamworks', url: 'assets/images/dreamworks-logo.png' },
+    { name: 'Lionsgate', url: 'assets/images/lionsgate-logo.png' }
   ];
 
   constructor() {}
