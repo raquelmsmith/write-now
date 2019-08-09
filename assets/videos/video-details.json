@@ -1,0 +1,73 @@
+{
+  "videos": [
+    {
+      "id": 0,
+      "thumbnail": "assets/videos/video-0/snapshots/video-0.jpg",
+      "quote": "I never imagined the difference that good copy could make. Write Now! has turned my business around.",
+      "author": "Christine Thomas, Thomas Design",
+      "comments": [
+        {
+          "author": "Karen Meyer",
+          "comment": "So cool to hear about how Write Now! changed Christine's conversion rates - with just the copy!",
+          "img": "assets/images/person-0.jpg"
+        },
+        {
+          "author": "Phillip Moore",
+          "comment": "I loved hearing Christine's story. What an amazing turnaround for her business. Congrats!",
+          "img": "assets/images/person-1.jpg"
+        },
+        {
+          "author": "Pablo Esteban",
+          "comment": "This was really interesting. Congrats on the success, Christine and Write Now!",
+          "img": "assets/images/person-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "thumbnail": "assets/videos/video-1/snapshots/video-1.jpg",
+      "quote": "Hiring Write Now! was definitely money well spent. Our increase in conversions made it pay off almost immediately.",
+      "author": "Tony Daly, ImagineDesign",
+      "comments": [
+        {
+          "author": "Phillip Moore",
+          "comment": "I loved hearing Christine's story. What an amazing turnaround for her business. Congrats!",
+          "img": "assets/images/person-1.jpg"
+        },
+        {
+          "author": "Karen Meyer",
+          "comment": "So cool to hear about how Write Now! changed Christine's conversion rates - just with the copy!",
+          "img": "assets/images/person-0.jpg"
+        },
+        {
+          "author": "Pablo Esteban",
+          "comment": "This was really interesting. Congrats on the success, Christine and Write Now!",
+          "img": "assets/images/person-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "thumbnail": "assets/videos/video-2/snapshots/video-2.jpg",
+      "quote": "Talk about easy - Write Now! had great intuition and knew what I wanted and what would work. Definitely recommend.",
+      "author": "Kayla Doles, Homeschool Helper",
+      "comments": [
+        {
+          "author": "Karen Meyer",
+          "comment": "So cool to hear about how Write Now! changed Christine's conversion rates - just with the copy!",
+          "img": "assets/images/person-0.jpg"
+        },
+        {
+          "author": "Pablo Esteban",
+          "comment": "This was really interesting. Congrats on the success, Christine and Write Now!",
+          "img": "assets/images/person-2.jpg"
+        },
+        {
+          "author": "Phillip Moore",
+          "comment": "I loved hearing Christine's story. What an amazing turnaround for her business. Congrats!",
+          "img": "assets/images/person-1.jpg"
+        }
+      ]
+    }
+  ]
+}
