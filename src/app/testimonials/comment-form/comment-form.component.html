@@ -1,18 +1,20 @@
 <form #commentForm="ngForm" (ngSubmit)="onSubmit()" class="mb-16">
-  <app-form-field-text
-    [placeholder]="'Name'"
-    [id]="'name'"
-  ></app-form-field-text
-  ><br />
-  <app-form-field-text
-    [placeholder]="'Email Address'"
-    [type]="'email'"
-    [id]="'email'"
-  ></app-form-field-text>
-  <br />
-  <app-form-field-textarea
-    [placeholder]="'Comment'"
-    [id]="'comment'"
-  ></app-form-field-textarea>
+  <fieldset class="mb-4">
+    <app-form-field-text
+      [placeholder]="'Name'"
+      [id]="'name'"
+    ></app-form-field-text
+    ><br />
+    <app-form-field-text
+      [placeholder]="'Email Address'"
+      [type]="'email'"
+      [id]="'email'"
+    ></app-form-field-text>
+    <br />
+    <app-form-field-textarea
+      [placeholder]="'Comment'"
+      [id]="'comment'"
+    ></app-form-field-textarea>
+  </fieldset>
   <app-button-primary [text]="'Submit'" [type]="'submit'"></app-button-primary>
 </form>

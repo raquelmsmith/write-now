@@ -12,6 +12,7 @@ import {
   MatButtonModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -34,49 +35,50 @@ import { CommentsComponent } from './testimonials/comments/comments.component';
 import { CommentFormComponent } from './testimonials/comment-form/comment-form.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormFieldTextareaComponent } from './form-field-textarea/form-field-textarea.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      NavigationComponent,
-      LogoComponent,
-      TopBannerComponent,
-      ButtonPrimaryComponent,
-      ButtonArrowsComponent,
-      HomeComponent,
-      DividerComponent,
-      ContainerMediumComponent,
-      FormFieldTextComponent,
-      ButtonSecondaryComponent,
-      NewsArticlesComponent,
-      ContainerLargeComponent,
-      LogoComponent,
-      TestimonialsComponent,
-      VideoPlayerComponent,
-      ContainerFullComponent,
-      SpeechBubbleComponent,
-      CommentsComponent,
-      CommentFormComponent,
-      PageNotFoundComponent,
-      FormFieldTextareaComponent
-   ],
-   imports: [
-      BrowserModule,
-      VgCoreModule,
-      VgControlsModule,
-      VgOverlayPlayModule,
-      VgBufferingModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      MatStepperModule,
-      MatInputModule,
-      MatButtonModule,
-      FormsModule,
-      ReactiveFormsModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    LogoComponent,
+    TopBannerComponent,
+    ButtonPrimaryComponent,
+    ButtonArrowsComponent,
+    HomeComponent,
+    DividerComponent,
+    ContainerMediumComponent,
+    FormFieldTextComponent,
+    ButtonSecondaryComponent,
+    NewsArticlesComponent,
+    ContainerLargeComponent,
+    LogoComponent,
+    TestimonialsComponent,
+    VideoPlayerComponent,
+    ContainerFullComponent,
+    SpeechBubbleComponent,
+    CommentsComponent,
+    CommentFormComponent,
+    PageNotFoundComponent,
+    FormFieldTextareaComponent,
+    StepperComponent
+  ],
+  imports: [
+    BrowserModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CdkStepperModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

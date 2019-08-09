@@ -15,7 +15,7 @@
     <h2 class="mb-4 text-xl tracking-wider font-display-solid">
       We are copywriting experts.
     </h2>
-    <p>
+    <p class="mb-8">
       Whether you need help optimizing landing pages, crafting engaging email
       marketing campaigns, or creating content for organic search, we've got you
       covered.
@@ -32,7 +32,7 @@
       Get our best articles, videos, and - best of all - our Copywriting 101
       ebook delivered right to your inbox. No spam, just the good stuff.
     </p>
-    <form action="#">
+    <form #subscribeForm="ngForm" class="mt-8">
       <fieldset class="flex justify-center">
         <app-form-field-text
           [type]="'text'"
@@ -110,6 +110,35 @@
       [text]="'Watch'"
       [routerLink]="'/testimonials'"
     ></app-button-secondary>
+  </app-container-medium>
+</section>
+<app-divider></app-divider>
+<section>
+  <app-container-medium>
+    <h2>How does it work?</h2>
+    <app-stepper>
+      <cdk-step>
+        <p>
+          First, get in touch! We'll talk to you about your business, what your
+          goals are, and what's working and not working for you right now.
+        </p>
+      </cdk-step>
+      <cdk-step>
+        <p>
+          Once we understand your business, we'll do a thorough analysis of your
+          website. We'll create an action plan for improving the copy in the
+          most needed spots.
+        </p>
+      </cdk-step>
+      <cdk-step>
+        <p>
+          Next, we'll make changes using A/B testing to ensure the improvements
+          are actually working. Above the base rate, you'll only get charged
+          when we start seeing 10% improvements in conversion for the given
+          page.
+        </p>
+      </cdk-step>
+    </app-stepper>
   </app-container-medium>
 </section>
 <app-divider></app-divider>

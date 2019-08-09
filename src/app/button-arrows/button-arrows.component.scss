@@ -18,7 +18,8 @@ span {
 
 :host-context(app-button-primary:hover) span svg path,
 :host-context(app-button-primary:hover) span svg path,
-:host-context(app-button-secondary:hover) span svg path {
+:host-context(app-button-secondary:hover) span svg path,
+:host-context(app-stepper button:hover) span svg path {
   stroke: #fff;
   &#second {
     transition: all 0.5s ease 0s;
