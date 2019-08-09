@@ -39,3 +39,10 @@ h2 {
 h3 {
   @apply font-display-solid tracking-wider;
 }
+
+.vg-overlay-play .vg-icon-play_arrow {
+  @apply bg-purple-transparent;
+}
+.vg-overlay-play:hover {
+  @apply opacity-100;
+}

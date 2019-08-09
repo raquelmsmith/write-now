@@ -17,7 +17,7 @@
   <h2>More Testimonials</h2>
   <div class="flex justify-center">
     <article *ngFor="let video of otherVideos" class="m-2">
-      <a routerLink="/testimonials/{{ video.id }}">
+      <a href="testimonials/{{ video.id }}">
         <figure class="overlay-purple relative">
           <img
             src="{{ video.thumbnail }}"

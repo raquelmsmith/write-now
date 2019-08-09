@@ -4652,6 +4652,14 @@ h3 {
   letter-spacing: 0.05em;
 }
 
+.vg-overlay-play .vg-icon-play_arrow {
+  background-color: rgba(167, 76, 201, 0.6);
+}
+
+.vg-overlay-play:hover {
+  opacity: 1;
+}
+
 @media (min-width: 640px){
   .sm\:appearance-none{
     -webkit-appearance: none;
