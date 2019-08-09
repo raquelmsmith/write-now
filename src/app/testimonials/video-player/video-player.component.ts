@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { VgAPI } from 'videogular2/compiled/core';
 
 @Component({
   selector: 'app-video-player',
@@ -6,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-player.component.scss']
 })
 export class VideoPlayerComponent implements OnInit {
+  @Input() videoId: string;
+  videoSrc: string;
+  videogular: VgAPI;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.videoSrc =
+      'assets/videos/video-' +
+      this.videoId +
+      '/MP4/video-' +
+      this.videoId +
+      '.mp4';
+  }
+
+  onPlayerReady(videogular: VgAPI) {
+    this.videogular = videogular;
+  }
 }

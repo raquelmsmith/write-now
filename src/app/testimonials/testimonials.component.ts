@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import VideoDetails from '../../assets/videos/video-details.json';
 
 @Component({
   selector: 'app-testimonials',
@@ -6,7 +10,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent implements OnInit {
-  constructor() {}
+  allVideos = VideoDetails.videos;
+  currentVideoId: string;
+  currentVideoDetails: {};
+  otherVideos;
 
-  ngOnInit() {}
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.currentVideoId = params.get('id');
+      this.currentVideoDetails = this.allVideos.find(
+        video => video.id === parseInt(this.currentVideoId)
+      );
+      this.otherVideos = this.allVideos.filter(
+        video => video.id !== parseInt(this.currentVideoId)
+      );
+    });
+  }
 }

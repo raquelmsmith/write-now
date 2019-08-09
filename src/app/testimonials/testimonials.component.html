@@ -2,14 +2,29 @@
   <h1>Testimonials</h1>
 </app-container-full>
 <app-container-medium>
-  <app-video-player></app-video-player>
-  <app-speech-bubble [cite]="'Christine Thomas, Thomas Design'">
+  <app-video-player videoId="{{ currentVideoDetails?.id }}"></app-video-player>
+  <app-speech-bubble cite="{{ currentVideoDetails?.author }}">
     <p>
-      I never imagined the difference that good copy could make. Write Now! has
-      turned my business around.
+      {{ currentVideoDetails?.quote }}
     </p>
   </app-speech-bubble>
   <h2>Leave a Comment</h2>
-  <app-comments></app-comments>
+  <app-comments [comments]="currentVideoDetails?.comments"></app-comments>
 </app-container-medium>
 <app-divider></app-divider>
+<app-container-large>
+  <h2>More Testimonials</h2>
+  <div class="flex justify-center">
+    <article *ngFor="let video of otherVideos" class="m-2">
+      <a routerLink="/testimonials/{{ video.id }}">
+        <figure class="overlay-purple relative">
+          <img
+            src="{{ video.thumbnail }}"
+            alt="Video thumbnail of {{ video.author }}"
+            class="w-40 grayscale"
+          />
+        </figure>
+      </a>
+    </article>
+  </div>
+</app-container-large>

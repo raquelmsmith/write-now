@@ -2,7 +2,7 @@
   <article *ngFor="let comment of comments; let i = index" class="flex">
     <div class="mt-8">
       <img
-        src="assets/images/person-{{ i }}.jpg"
+        src="{{ comment.img }}"
         alt="{{ comment.author }}"
         class="rounded-full grayscale"
       />

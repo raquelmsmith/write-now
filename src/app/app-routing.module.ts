@@ -3,10 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContainerMediumComponent } from './container-medium/container-medium.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'testimonials', component: TestimonialsComponent }
+  { path: 'testimonials/:id', component: TestimonialsComponent },
+  { path: 'testimonials', redirectTo: '/testimonials/0', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

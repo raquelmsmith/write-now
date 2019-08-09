@@ -21,3 +21,20 @@
 .grayscale {
   filter: grayscale(100%);
 }
+
+.overlay-purple {
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(167, 76, 201, 0.6);
+    transition: all 0.5s ease 0s;
+  }
+  &:hover:after {
+    background: rgba(167, 76, 201, 0.8);
+  }
+}

@@ -26,40 +26,44 @@ import { ContainerFullComponent } from './container-full/container-full.componen
 import { SpeechBubbleComponent } from './testimonials/speech-bubble/speech-bubble.component';
 import { CommentsComponent } from './testimonials/comments/comments.component';
 import { CommentFormComponent } from './testimonials/comment-form/comment-form.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavigationComponent,
-    LogoComponent,
-    TopBannerComponent,
-    ButtonPrimaryComponent,
-    ButtonArrowsComponent,
-    HomeComponent,
-    DividerComponent,
-    ContainerMediumComponent,
-    FormFieldTextComponent,
-    ButtonSecondaryComponent,
-    NewsArticlesComponent,
-    ContainerLargeComponent,
-    LogoComponent,
-    TestimonialsComponent,
-    VideoPlayerComponent,
-    ContainerFullComponent,
-    SpeechBubbleComponent,
-    CommentsComponent,
-    CommentFormComponent
-  ],
-  imports: [
-    BrowserModule,
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      NavigationComponent,
+      LogoComponent,
+      TopBannerComponent,
+      ButtonPrimaryComponent,
+      ButtonArrowsComponent,
+      HomeComponent,
+      DividerComponent,
+      ContainerMediumComponent,
+      FormFieldTextComponent,
+      ButtonSecondaryComponent,
+      NewsArticlesComponent,
+      ContainerLargeComponent,
+      LogoComponent,
+      TestimonialsComponent,
+      VideoPlayerComponent,
+      ContainerFullComponent,
+      SpeechBubbleComponent,
+      CommentsComponent,
+      CommentFormComponent,
+      PageNotFoundComponent
+   ],
+   imports: [
+      BrowserModule,
+      VgCoreModule,
+      VgControlsModule,
+      VgOverlayPlayModule,
+      VgBufferingModule,
+      AppRoutingModule,
+      BrowserAnimationsModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule {}
