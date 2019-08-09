@@ -6,6 +6,12 @@ import { VgControlsModule } from 'videogular2/compiled/controls';
 import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
 import { VgBufferingModule } from 'videogular2/compiled/buffering';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatStepperModule,
+  MatInputModule,
+  MatButtonModule
+} from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -27,6 +33,7 @@ import { SpeechBubbleComponent } from './testimonials/speech-bubble/speech-bubbl
 import { CommentsComponent } from './testimonials/comments/comments.component';
 import { CommentFormComponent } from './testimonials/comment-form/comment-form.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormFieldTextareaComponent } from './form-field-textarea/form-field-textarea.component';
 
 @NgModule({
    declarations: [
@@ -50,7 +57,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       SpeechBubbleComponent,
       CommentsComponent,
       CommentFormComponent,
-      PageNotFoundComponent
+      PageNotFoundComponent,
+      FormFieldTextareaComponent
    ],
    imports: [
       BrowserModule,
@@ -59,7 +67,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       VgOverlayPlayModule,
       VgBufferingModule,
       AppRoutingModule,
-      BrowserAnimationsModule
+      BrowserAnimationsModule,
+      MatStepperModule,
+      MatInputModule,
+      MatButtonModule,
+      FormsModule,
+      ReactiveFormsModule
    ],
    providers: [],
    bootstrap: [

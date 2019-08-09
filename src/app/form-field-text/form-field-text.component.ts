@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FormFieldTextComponent implements OnInit {
   @Input() type: string;
   @Input() placeholder: string;
+  @Input() id: string;
+  @Input() required: boolean;
 
   constructor() {}
 

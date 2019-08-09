@@ -32,15 +32,17 @@
       Get our best articles, videos, and - best of all - our Copywriting 101
       ebook delivered right to your inbox. No spam, just the good stuff.
     </p>
-    <form>
-      <app-form-field-text
-        [type]="'text'"
-        [placeholder]="'First Name'"
-      ></app-form-field-text>
-      <app-form-field-text
-        [type]="'email'"
-        [placeholder]="'Email Address'"
-      ></app-form-field-text>
+    <form action="#">
+      <fieldset class="flex justify-center">
+        <app-form-field-text
+          [type]="'text'"
+          [placeholder]="'First Name'"
+        ></app-form-field-text>
+        <app-form-field-text
+          [type]="'email'"
+          [placeholder]="'Email Address'"
+        ></app-form-field-text>
+      </fieldset>
       <app-button-primary [text]="'Sign Up'"></app-button-primary>
     </form>
   </app-container-medium>

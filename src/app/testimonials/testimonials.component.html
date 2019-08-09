@@ -8,7 +8,8 @@
       {{ currentVideoDetails?.quote }}
     </p>
   </app-speech-bubble>
-  <h2>Leave a Comment</h2>
+  <h2 class="mb-4">Leave a Comment</h2>
+  <app-comment-form></app-comment-form>
   <app-comments [comments]="currentVideoDetails?.comments"></app-comments>
 </app-container-medium>
 <app-divider></app-divider>

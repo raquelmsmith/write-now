@@ -14,9 +14,15 @@ export class CommentFormComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder) {}
 
-  ngOnInit() {}
-
-  onSubmit() {
-    console.log('Form submitted!');
+  ngOnInit() {
+    this.nameGroup = this._formBuilder.group({
+      nameCtrl: ['', Validators.required]
+    });
+    this.emailGroup = this._formBuilder.group({
+      emailCtrl: ['', Validators.required]
+    });
+    this.commentGroup = this._formBuilder.group({
+      commentCtrl: ['', Validators.required]
+    });
   }
 }

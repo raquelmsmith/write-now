@@ -1,0 +1,68 @@
+<mat-vertical-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="nameGroup">
+    <form [formGroup]="nameGroup">
+      <ng-template matStepLabel>
+        <span class="font-display-solid tracking-wider">Name</span>
+      </ng-template>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Name"
+          formControlName="nameCtrl"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="emailGroup">
+    <form [formGroup]="emailGroup">
+      <ng-template matStepLabel>
+        <span class="font-display-solid tracking-wider">Email</span>
+      </ng-template>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Email Address"
+          formControlName="emailCtrl"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="commentGroup">
+    <form [formGroup]="commentGroup">
+      <ng-template matStepLabel>
+        <span class="font-display-solid tracking-wider">Comment</span>
+      </ng-template>
+      <mat-form-field>
+        <textarea
+          matInput
+          placeholder="Comment"
+          formControlName="commentCtrl"
+          required
+        ></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>
+      <span class="font-display-solid tracking-wider">Submit</span>
+    </ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>
