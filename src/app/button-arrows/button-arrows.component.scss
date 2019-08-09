@@ -16,20 +16,23 @@ span {
   }
 }
 
-:host-context(app-button-primary:hover) span svg path,
-:host-context(app-button-primary:hover) span svg path,
-:host-context(app-button-secondary:hover) span svg path,
-:host-context(app-stepper button:hover) span svg path {
-  stroke: #fff;
-  &#second {
-    transition: all 0.5s ease 0s;
-  }
-  &#third {
-    transition: all 0.5s ease 0.2s;
+:host-context(app-button-primary:hover),
+:host-context(app-button-primary:hover),
+:host-context(app-button-secondary:hover),
+:host-context(app-stepper button:hover),
+:host-context(app-news-articles a:hover) {
+  span svg path {
+    stroke: #fff;
+    &#second {
+      transition: all 0.5s ease 0s;
+    }
+    &#third {
+      transition: all 0.5s ease 0.2s;
+    }
   }
 }
 
 :host-context(app-button-secondary) span svg {
-  width: 45%;
+  transform: scale(0.9);
   margin-top: -2px;
 }
