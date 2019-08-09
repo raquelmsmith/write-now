@@ -1,11 +1,16 @@
-<nav>
+<nav
+  class="md:flex content-center justify-between px-4 md:-mb-4 max-w-6xl mx-auto"
+>
   <app-logo></app-logo>
-  <ul class="p-4 mx-auto max-w-md flex justify-around">
-    <li>Services</li>
-    <li>
-      <a routerLink="/testimonials">Testimonials</a>
+  <ul class="p-4 mx-auto md:mx-0 max-w-md flex justify-between">
+    <li *ngFor="let item of navItems" class="mx-2">
+      <a
+        routerLink="{{ item.target }}"
+        routerLinkActive="border-b-2 border-pink"
+        class="hover:border-pink hover:border-b-2"
+      >
+        {{ item.label }}
+      </a>
     </li>
-    <li>Company</li>
-    <li>Contact</li>
   </ul>
 </nav>

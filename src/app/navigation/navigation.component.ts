@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  navItems = [
+    { label: 'Services', target: '/services' },
+    { label: 'Testimonials', target: '/testimonials' },
+    { label: 'Company', target: '/company' },
+    { label: 'Contact', target: '/contact' }
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

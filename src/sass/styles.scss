@@ -22,7 +22,7 @@
 }
 
 body {
-  @apply text-white bg-black font-body;
+  @apply text-white bg-black font-body overflow-x-hidden;
 }
 
 h1,
