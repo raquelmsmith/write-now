@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ButtonSecondaryComponent implements OnInit {
   @Input() text: string;
+  @Input() routerLink: string;
   constructor() {}
 
   ngOnInit() {}

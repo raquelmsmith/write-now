@@ -54,7 +54,10 @@
       Our customers love us - and our results. But don't take our word for it,
       let them tell you themselves!
     </p>
-    <div class="testimonial-preview">
+    <a
+      class="testimonial-preview relative block"
+      [routerLink]="['/testimonials']"
+    >
       <figure>
         <img
           src="assets/images/testimonial-image.png"
@@ -102,8 +105,11 @@
           </g>
         </g>
       </svg>
-    </div>
-    <app-button-secondary [text]="'Watch'"></app-button-secondary>
+    </a>
+    <app-button-secondary
+      [text]="'Watch'"
+      [routerLink]="'/testimonials'"
+    ></app-button-secondary>
   </app-container-medium>
 </section>
 <app-divider></app-divider>
