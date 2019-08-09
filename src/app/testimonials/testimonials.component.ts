@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import VideoDetails from '../../assets/videos/video-details.json';
+import { Testimonial } from '../_models/testimonial.js';
 
 @Component({
   selector: 'app-testimonials',
@@ -12,7 +13,7 @@ import VideoDetails from '../../assets/videos/video-details.json';
 export class TestimonialsComponent implements OnInit {
   allVideos = VideoDetails.videos;
   currentVideoId: string;
-  currentVideoDetails: {};
+  currentVideoDetails: Testimonial;
   otherVideos;
 
   constructor(private route: ActivatedRoute) {}
